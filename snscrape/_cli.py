@@ -344,3 +344,7 @@ def main():
 		except BrokenPipeError:
 			os.dup2(os.open(os.devnull, os.O_WRONLY), sys.stdout.fileno())
 			sys.exit(1)
+
+if __name__=='__main__':
+	main()
+
